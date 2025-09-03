@@ -1,1 +1,28 @@
++----------------+          +----------------+          +----------------+
+|     Usuario    |          |     Evento     |          |    Categoria   |
++----------------+          +----------------+          +----------------+
+| - id: int      |          | - id: int      |          | - nome: String |
+| - nome: String |          | - nome: String |          +----------------+
+| - email: String|          | - endereco: String|
+| - telefone: String|       | - categoria: Categoria|
++----------------+          | - horario: LocalDateTime|
+| +getters/setters|         | - descricao: String|
++----------------+          | - participantes: List<Usuario>|
+                            +----------------+
+                            | +getters/setters|
+                            +----------------+
 
++----------------+
+| EventoService  |
++----------------+
+| - eventos: List<Evento>|
+| - usuarios: List<Usuario>|
++----------------+
+| +cadastrarEvento()|
+| +cadastrarUsuario()|
+| +listarEventos()|
+| +participarEvento()|
+| +cancelarParticipacao()|
+| +carregarEventos()|
+| +salvarEventos()|
++----------------+
